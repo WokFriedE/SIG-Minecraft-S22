@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MinecraftListeners:jar">
+    <output-path>$USER_HOME$/Desktop/Test server/plugins</output-path>
+    <root id="archive" name="MinecraftListeners.jar">
+      <element id="module-output" name="MinecraftListeners" />
+      <element id="file-copy" path="$PROJECT_DIR$/plugin.yml" />
+    </root>
+  </artifact>
+</component>
