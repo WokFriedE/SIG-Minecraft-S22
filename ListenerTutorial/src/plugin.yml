@@ -1,0 +1,4 @@
+main: com.yournamelowercased
+name: Plugin Template
+version: 1
+api-version: 1.18
