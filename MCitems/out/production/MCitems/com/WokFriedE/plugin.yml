@@ -1,0 +1,9 @@
+name: BestPlugin
+version: 1.0
+author: WokFriedE
+main: com.WokFriedE.BestPlugin
+api-version: 1.17
+commands:
+  givewand:
+    description: Gives custom item
+    usage: /<command>

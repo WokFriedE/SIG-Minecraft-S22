@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MCitems:jar">
+    <output-path>$PROJECT_DIR$/../../mc server/plugins</output-path>
+    <root id="archive" name="MCitems.jar">
+      <element id="module-output" name="MCitems" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/com/WokFriedE/plugin.yml" />
+    </root>
+  </artifact>
+</component>
