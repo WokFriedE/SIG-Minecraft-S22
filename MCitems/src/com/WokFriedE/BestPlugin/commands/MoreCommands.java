@@ -17,7 +17,7 @@ public class MoreCommands implements CommandExecutor { //need to implement comma
         Player player = (Player) sender; //gets the sender and converts it to a player object
 
         if (cmd.getName().equalsIgnoreCase("givewand")){
-            player.getInventory().addItem(ItemManager.funnyStick);//command to add the custom item
+            player.getInventory().addItem(ItemManager.funnystick);//command to add the custom item
         }
 
         return true;

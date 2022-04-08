@@ -12,7 +12,7 @@ import java.util.List;
 
 public class ItemManager { //first make a item manager to handle all items
 
-    public static ItemStack funnyStick;
+    public static ItemStack funnystick;
 
     public static void init() { //to do any initialization
         createFunnyStick(); //lastly tell the code to init the item
@@ -30,11 +30,11 @@ public class ItemManager { //first make a item manager to handle all items
         meta.addEnchant(Enchantment.LUCK, 1, false); //effect (luck for shiney), level, false to ignore vanilla restricts
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS); //hide the luck effect, so embedded essentially
         item.setItemMeta(meta); //to set meta to the object
-        funnyStick = item;
+        funnystick = item;
 
         //after creating an item crafting item
         //Shaped recipe --> requires a specific shape
-        ShapedRecipe sr = new ShapedRecipe(NamespacedKey.minecraft("funnyStick"), item); //namespace (reference key), new ItemStack(Material.DIAMOND, 1 | for normal items
+        ShapedRecipe sr = new ShapedRecipe(NamespacedKey.minecraft("funnystick"), item); //namespace (reference key), new ItemStack(Material.DIAMOND, 1 | for normal items
         sr.shape(" B ",
                  " S ",
                  " S "); //set the crafting recipe, each key will act as items
@@ -43,12 +43,14 @@ public class ItemManager { //first make a item manager to handle all items
         Bukkit.getServer().addRecipe(sr);//registers the recipe
 
         //Shapeless recipe
-        ShapelessRecipe slr = new ShapelessRecipe(NamespacedKey.minecraft("shapelessStick"), item);
+        ShapelessRecipe slr = new ShapelessRecipe(NamespacedKey.minecraft("shapelessstick"), item);
         slr.addIngredient(2, Material.BAMBOO); //add ingredients instead
         slr.addIngredient(1, Material.ARROW);
+        Bukkit.getServer().addRecipe(slr);
 
         //furnace recipe
-        FurnaceRecipe smelt = new FurnaceRecipe(NamespacedKey.minecraft("smeltedStick"), item, Material.EMERALD, 1.0f, 20);
+        FurnaceRecipe smelt = new FurnaceRecipe(NamespacedKey.minecraft("smeltedstick"), item, Material.EMERALD, 1.0f, 20);
+        Bukkit.getServer().addRecipe(smelt);
         //1 s = 20 ticks
         //namespace, item making, item needed, experience, time
 
